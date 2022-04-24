@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="logo">
+            Creativo
+        </div>
+        <img src="img/wolf-2826741_1920.jpg" alt="" class="img">
+        <div class="contenedor">
+            <h2>Hagamos <br>Algo Creativo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae iste deleniti illum enim atque dicta voluptatem natus voluptas. Veritatis qui deserunt hic fuga aperiam eaque corporis deleniti natus asperiores.</p>
+            <a href="">Empezar</a>
+            <p class="copyRight">
+                @2022. Juan Falco
+            </p>
+        </div>
+    </section>
+    <div class="menu" onclick="toggleMenu();">
+
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Trabajo</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="redes">
+            <ul>
+                <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+            </ul>
+            <a href="#" class="email"><img src="img/email.png" alt=""></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menu = document.querySelector('.menu');
+            var nav = document.querySelector('.nav');
+            menu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

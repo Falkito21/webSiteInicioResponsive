@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(43, 43, 43);
+    overflow-x: hidden;
+}
+section
+{
+    position: relative;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section .logo
+{
+    position: fixed;
+    top: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    z-index: 100;
+    cursor: pointer;
+}
+section .img
+{
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 45%;
+    height: 100%;
+}
+section .contenedor
+{
+    height: 100%;
+    position: relative;
+    max-width: 650px;
+    z-index: 1;
+}
+section .contenedor h2
+{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+section .contenedor p
+{
+    color: #fff;
+    font-size: 1.1em;
+    margin: 20px 0 10px;
+}
+section .contenedor a
+{
+    color: #fff;
+    background-color: #f60f20;
+    font-size: 1em;
+    margin: 20px 0;
+    font-weight: 500;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.contenedor
+.copyRight
+{
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    font-size: 1.1em;
+    margin: 20px 0 10px;
+    bottom :-11rem;
+}
+.menu
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #f60f20 url(img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.menu.active
+{
+    background: #f60f20 url(img/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.nav
+{
+    position: fixed;
+    top: 0;
+    left: calc(100% - 60px);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.nav.active
+{
+    left: 0px;
+}
+.nav ul
+{
+    position: relative;
+
+}
+.nav ul li
+{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+.nav ul li a
+{
+    font-size: 2.5em;
+    color: #111;
+    text-decoration: none;
+    font-weight: 300;
+}
+.nav ul li a:hover
+{
+    color: #f60f20;
+}
+.redes
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes ul
+{
+    position: relative;
+}
+.redes ul
+.redes ul li 
+{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+.redes ul li a
+{
+    position: relative;
+    display: inline-block;
+}
+.redes .email
+{
+    position: absolute;
+    bottom: 20px;
+    transform: scale(.6);
+}
+
+@media (max-width: 767px)
+{
+    section
+    {
+        padding: 100px 40px;
+    }
+    section .contenedor h2
+    {
+        font-size: 2.5em;
+    }
+    .nav
+    {
+        left: 100%;
+    }
+    section .img
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
